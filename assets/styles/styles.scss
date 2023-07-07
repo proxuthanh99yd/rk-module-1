@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: rgb(240 241 245);
+    background-image: linear-gradient(rgb(210 213 219) 1px, transparent 1px),
+        linear-gradient(to right, rgb(210 213 219) 1px, rgb(240 241 245) 1px);
+    background-size: 20px 20px;
+    font-family: "Choco cooky";
+    font-weight: normal;
+    font-style: normal;
+}
+
+.app {
+    @import "login";
+    @import "layout";
+    @import "buttons";
+    @import "dialog";
+    @import "pagination";
+    @import "categories";
+    @import "products";
+    @import "users";
+    @import "table";
+    @import "profile";
+}
+@import "modal";

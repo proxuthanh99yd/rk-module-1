@@ -1,0 +1,129 @@
+.responsive-table {
+    background: #ddd;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    padding: 16px;
+    border: solid 3px #ddd;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    li {
+        border-radius: 3px;
+        padding: 10px 5px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+    .table-header {
+        background-color: #888;
+        color: #ffffff;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+
+        button.active {
+            color: green;
+        }
+    }
+    .table-row {
+        background-color: #ffffff;
+        box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+        img {
+            width: 60px;
+            height: auto;
+            object-fit: cover;
+        }
+        div {
+            padding: 10px;
+            max-height: 100px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s ease;
+        }
+        .detail {
+            &:nth-child(3) {
+                cursor: pointer;
+                &:hover {
+                    border-radius: 10px;
+                    opacity: 0.8;
+                    background: #ddd;
+                }
+            }
+        }
+        .btn {
+            font-size: 14px;
+            font-family: inherit;
+            padding: 2px 6px;
+
+            &-delete:hover {
+                background: orangered;
+                color: #ffffff;
+            }
+            &-edit:hover {
+                background: #888;
+                color: #ffffff;
+            }
+        }
+    }
+    .col-1 {
+        flex-basis: 8.33333333%;
+    }
+    .col-2 {
+        flex-basis: 16.66666667%;
+    }
+    .col-3 {
+        flex-basis: 25%;
+    }
+    .col-4 {
+        flex-basis: 33.33333333%;
+    }
+    .col-5 {
+        flex-basis: 41.66666667%;
+    }
+    .col-6 {
+        flex-basis: 50%;
+    }
+    .col-7 {
+        flex-basis: 58.33333333%;
+    }
+    .col-8 {
+        flex-basis: 66.66666667%;
+    }
+    .col-9 {
+        flex-basis: 75%;
+    }
+    .col-10 {
+        flex-basis: 83.33333333%;
+    }
+    .col-11 {
+        flex-basis: 91.66666667%;
+    }
+    .col-12 {
+        flex-basis: 100%;
+    }
+
+    @media all and (max-width: 767px) {
+        .table-header {
+            display: none;
+        }
+        .table-row {
+        }
+        li {
+            display: block;
+        }
+        .col {
+            flex-basis: 100%;
+        }
+        .col {
+            display: flex;
+            padding: 10px 0;
+            &:before {
+                color: #6c7a89;
+                padding-right: 10px;
+                content: attr(data-label);
+                flex-basis: 50%;
+                text-align: right;
+            }
+        }
+    }
+}

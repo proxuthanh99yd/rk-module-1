@@ -1,0 +1,68 @@
+.form-product {
+    margin: 20px;
+    .form-group.invalid {
+        input {
+            border-color: red !important;
+        }
+        span {
+            color: red !important;
+        }
+    }
+    .form-group {
+        margin-top: 16px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .form-label {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .form-control {
+            border: 2px solid #ddd;
+            height: 40px;
+            font-size: 20px;
+            font-family: inherit;
+            &:focus {
+                outline: transparent;
+                border: 2px solid #000;
+            }
+        }
+        textarea {
+            border: 2px solid #ddd;
+        }
+    }
+    .form-btn {
+        margin-top: 20px;
+        margin-bottom: -20px;
+        input {
+            margin-left: auto;
+        }
+    }
+}
+.product-detail {
+    li {
+        margin-top: 16px;
+        font-size: 16px;
+        span {
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        img {
+            width: 60px;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+}
+#modal-delete {
+    span {
+        color: red;
+        opacity: 0.8;
+    }
+    .options {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+}
